@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Twilio Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<label for="number">Number: </label><input id="number" type="tel"/><br>
+<button type="button" id="call">Call</button><br>
+<button type="button" id="end-call">End Call</button><br>
+<button type="button" id="hold">Hold</button><br>
+
+<script src="{{ asset('js/twilio-dial.js') }}"></script>
+</body>
+</html>
