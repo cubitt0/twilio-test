@@ -7,6 +7,7 @@ parameters:
     twilio.sid: '%env(TWILIO_ACCOUNT_SID)%'
     twilio.token: '%env(TWILIO_ACCOUNT_TOKEN)%'
     twilio.number.from: '%env(TWILIO_NUMBER_FROM)%'
+    ngrok.domain: '%env(NGROK_DOMAIN)%'
 services:
     # default configuration for services in *this* file
     _defaults:

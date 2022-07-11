@@ -6,14 +6,29 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Twilio Test</title>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 <body>
-<label for="number">Number: </label><input id="number" type="tel"/><br>
-<button type="button" id="call">Call</button><br>
-<button type="button" id="end-call">End Call</button><br>
-<button type="button" id="hold">Hold</button><br>
+<div class="d-flex justify-content-center flex-column align-items-center">
+    <label for="number">Number: </label><input id="number" type="tel" value="+48730499895" class="w-25"/><br>
+    <button type="button" id="call" class="btn btn-success w-25">Call</button>
+    <br>
+    <button type="button" id="end-call" class="btn btn-danger w-25">End Call</button>
+    <br>
+    <button type="button" id="hold" class="btn btn-warning w-25">Hold</button>
+    <br>
+    <button type="button" id="unhold" class="btn btn-primary w-25">UnHold</button>
+    <br>
+    <button type="button" id="music-start" class="btn btn-primary w-25">Start Music</button>
+    <br>
+    <button type="button" id="music-stop" class="btn btn-danger w-25">Stop Music</button>
+    <br>
+</div>
 
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="{{ asset('js/twilio-dial.js') }}"></script>
 </body>
 </html>
